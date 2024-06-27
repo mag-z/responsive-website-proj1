@@ -25,15 +25,25 @@ img {
         typography
 ==================== */
 
+h1 {
+    font-weight: 300;
+    font-size: 2.5rem;
+}
+
+h2 {
+    margin-top: 0;
+}
+
 .title {
     font-size: 1.75rem;
     margin-bottom: 1.5em;
+    font-weight: 900;
 }
 
 .title span {
     font-weight: 300;
     display: block;
-    font-size: .7em;
+    font-size: .65em;
 }
 
 @media (min-width: 60rem) {
@@ -136,5 +146,42 @@ nav a:focus {
     .home-hero {
         height: 100vh;
         padding-top: 30vh;
+    }
+}
+
+
+/* home-about
+==================== */
+
+.home-about-textbox {
+    background-color: #232323;
+    padding: 3.5em;
+    width: 100vw;
+    /* margin-left: -2.5%; ??? */
+    outline: 2px solid #00ff6c;
+    outline-offset: -2.5em;
+    color: #FFF;
+    position: relative;
+}
+
+.home-about-textbox h2 {
+    color: #00ff6c;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 1em;
+    background: #232323;
+    padding: 0 .5rem;
+    
+}
+
+@media (min-width: 25rem) {
+    h2 {
+        font-size: 2rem;
+    }
+
+    .home-about-textbox h2 {
+        top: .65em;
+        padding: 0 .4em;
     }
 }
